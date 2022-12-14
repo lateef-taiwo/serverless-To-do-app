@@ -1,7 +1,7 @@
 # TODO: Change the name of the org 
-org: rolteame
-app: serverless-application
-service: serverless-application
+org: ltmachine
+app: serverless-todo-app
+service: serverless-todo-app
 disabledDeprecations:
 - '*'
 
