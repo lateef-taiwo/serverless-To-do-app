@@ -115,14 +115,14 @@ async generateUploadUrl(todoId: string): Promise<string> {
 }
 }
 
-//    const createDynamoDBClient = () => {
-//      if (process.env.IS_OFFLINE) {
-//      logger.info('Creating a local DynamoDB instance')
-//      return new XAWS.DynamoDB.DocumentClient({
-//        region: 'localhost',
-//        endpoint: 'http://localhost:8000'
-//      })
-//    }
+   const createDynamoDBClient = () => {
+     if (process.env.IS_OFFLINE) {
+     logger.info('Creating a local DynamoDB instance')
+     return new XAWS.DynamoDB.DocumentClient({
+       region: 'localhost',
+       endpoint: 'http://localhost:8000'
+     })
+   }
 
-//    return new XAWS.DynamoDB.DocumentClient()
-//  }
+   return new XAWS.DynamoDB.DocumentClient()
+ }
